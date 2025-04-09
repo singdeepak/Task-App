@@ -49,6 +49,6 @@ class User extends Authenticatable
 
 
     public function task(){
-        return $this->hasOne(Task::class);
+        return $this->hasOne(Task::class, 'assigned_to');
     }
 }

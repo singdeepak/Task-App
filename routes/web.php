@@ -22,5 +22,5 @@ Route::middleware('auth')->group(function(){
 
     Route::resource('tasks', TaskController::class);
     Route::resource('timesheets', TimesheetController::class);
-    Route::get('/reports', [DashboardController::class, 'reports'])->name('reports');
+    Route::get('reports', [DashboardController::class, 'reports'])->name('reports');
 });
