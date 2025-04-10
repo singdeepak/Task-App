@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Timesheet extends Model
 {
+    protected $guarded = [];
+    
     public function task(){
         return $this->belongsTo(Task::class);
     }
